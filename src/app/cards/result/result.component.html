@@ -1,0 +1,33 @@
+<div class="resultPage">
+    <div class="resultLogo">
+        <img class="svg" src="assets/svg/jpg 1.svg">
+    </div>
+    <div class="resultSearch">
+        <input list="aramalistesi" id="input" placeholder="search">
+        <button id="btnsearch">Search</button>
+    </div>
+
+</div>
+<div class="result">
+    <div class="filtre">
+        <form action="#">
+            <select name="cars" id="cars">
+                <option value="asc">A-Z</option>
+                <option value="desc">Z-A</option>
+                <option value="yearasc">Yıl artan</option>
+                <option value="yeardesc">Yıl azalan</option>
+            </select>
+
+        </form>
+    </div>
+
+    <div>
+        <div class="card-item" *ngFor="let card of searchService.filteredCards | 
+    paginate :{itemsPerPage:5,currentPage:page,
+totalItems:totalLength};">
+            <app-card-item [card]="card"></app-card-item>
+        </div>
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+
+    </div>
+</div>

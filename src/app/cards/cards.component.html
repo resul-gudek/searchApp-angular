@@ -1,0 +1,25 @@
+<div class="page">
+        <div class="home">
+
+                <div class="logo-title">
+                        <img class="svg" src="assets/svg/jpg 1.svg">
+                        <h6>Search web app</h6>
+                </div>
+
+                <div class="search">
+                        <app-card-search></app-card-search>
+                        <button class="btnsearch" routerLink="/result">search</button>
+
+                </div>
+                <div class="card-conta"> 
+                        <div class="card-item" *ngFor="let card of searchService.filteredCards">
+                                <app-card-item [card]="card"></app-card-item>
+                        </div>
+                </div>
+
+
+                <a routerLink="/result">Show more..</a>
+
+        </div>
+
+</div>
