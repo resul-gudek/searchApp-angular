@@ -15,8 +15,7 @@ export class ResultComponent implements OnInit {
   page: number = 1;
   ngOnInit(): void {
     this.searchService.resultCards;
-    // this.searchService.getCards();
-    // this.totalLength = this.searchService.resultCards.length; 
+   
 
   }
 
