@@ -9,8 +9,8 @@ import { SearchService } from 'src/app/services/search.service';
 })
 export class ResultComponent implements OnInit {
 
-  card!: Card;
   constructor(public searchService: SearchService) { }
+  card!: Card;
   totalLength: any;
   page: number = 1;
   ngOnInit(): void {
