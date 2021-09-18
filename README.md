@@ -1,6 +1,6 @@
 # searchApp-Angular // Arama motoru 
 
-Projemin front-end tarafını Angular CLI 11 ile geliştirmekteyim.
+Projemin front-end tarafını Angular CLI ile geliştirmekteyim.
 Api den gelen verilerde arama yaparak ve verileri filtreleyerek gelen sonuçları sonuç ekranın da daha detaylı olarak göstermekteyim. Sonuç sayfasında eğer veriler belli bir sayının üzerinde gelirse pagination olarak sayfalara ayırmaktadır. Gelen sonuçları  a-z, z-a sıralama yapılabilmektedir.
 ## Proje detayı 
 - Mevcutta iki sayfadan oluşmaktadır.
